@@ -1,0 +1,25 @@
+name: 'Pull Request State Machine'
+on:
+  pull_request_target:
+    types:
+      - assigned
+      - assigned
+      - unassigned
+      - labeled
+      - unlabeled
+      - opened
+      - edited
+      - closed
+      - reopened
+      - synchronize
+      - ready_for_review
+      - locked
+      - unlocked
+      - review_requested
+      - review_request_removed
+jobs:
+  state-machine:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hello"
+      - uses: JuliaLang/pull-request-state-machine@master
