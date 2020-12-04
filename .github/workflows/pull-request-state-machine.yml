@@ -21,5 +21,4 @@ jobs:
   state-machine:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "hello"
-      - uses: JuliaLang/pull-request-state-machine@master
+      - uses: JuliaLang/pull-request-state-machine@main
