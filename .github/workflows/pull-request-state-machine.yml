@@ -21,4 +21,4 @@ jobs:
   state-machine:
     runs-on: ubuntu-latest
     steps:
-      - uses: JuliaLang/pull-request-state-machine@main
+      - uses: JuliaLang/pull-request-state-machine@dpa/state-machine
