@@ -22,4 +22,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello world"
-      - uses: JuliaLang/pull-request-state-machine@main
+      - uses: JuliaLang/pull-request-state-machine@dpa/client
