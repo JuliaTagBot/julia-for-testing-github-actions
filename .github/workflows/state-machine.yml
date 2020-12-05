@@ -22,7 +22,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello world"
-      # 
       - uses: JuliaLang/pull-request-state-machine@dpa/client
         with:
           token: "${{ secrets.GITHUB_TOKEN }}"
