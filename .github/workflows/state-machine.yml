@@ -23,6 +23,6 @@ jobs:
     steps:
       - run: echo "Hello world"
       #
-      - uses: JuliaLang/pull-request-state-machine@dpa/client
+      - uses: JuliaLang/pull-request-state-machine@main
         with:
           token: "${{ secrets.GITHUB_TOKEN }}"
