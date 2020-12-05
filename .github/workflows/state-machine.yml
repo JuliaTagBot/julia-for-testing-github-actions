@@ -1,4 +1,4 @@
-name: 'Pull Request State Machine'
+name: 'State Machine'
 on:
   pull_request_target:
     types:
@@ -18,8 +18,10 @@ on:
       - review_requested
       - review_request_removed
 jobs:
-  state-machine:
+  machine:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello world"
       - uses: JuliaLang/pull-request-state-machine@dpa/client
+        with:
+          token: "${{ secrets.GITHUB_TOKEN }}"
