@@ -1,0 +1,21 @@
+name: Review Automation
+on:
+  pull_request_target:
+    types:
+      - opened
+      - closed
+  pull_request_review:
+    types:
+      - submitted
+  check_run:
+    types:
+      - completed
+  schedule:
+    - cron: 0 0 * * *
+jobs:
+  automate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: JuliaLang/pull-request-state-machine@v1
+        with:
+          token: ${{ secrets.REVIEW_TOKEN }}
