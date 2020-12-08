@@ -16,6 +16,6 @@ jobs:
   automate:
     runs-on: ubuntu-latest
     steps:
-      - uses: JuliaLang/pull-request-state-machine@v1
+      - uses: JuliaLang/pull-request-state-machine@cdg/redo
         with:
           token: ${{ secrets.REVIEW_TOKEN }}
